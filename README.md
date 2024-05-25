@@ -27,53 +27,62 @@ This repository contains code and data for performing Natural Language Processin
    cd your-repo-name
 
 2. **Create and activate a virtual environment:**
+   ```bash
    python -m venv venv
    source venv/bin/activate   # On Windows: venv\Scripts\activate
 
 3. **Install the required dependencies:**
+   ```bash
    pip install -r requirements.txt
 
 4. **Download spaCy's English language model:**
+   ```bash
    python -m spacy download en_core_web_sm
 
 ## Scripts and Tasks
 1. **Processing Movie Reviews:**
+   
    This script processes the movie reviews using spaCy. It performs the following tasks:
-   Counts the number of sentences in each movie review.
-   Extracts named entities of types PERSON, NORP, FAC, and ORG.
-   Extracts adjectives from the reviews.  
+   - Counts the number of sentences in each movie review.
+   - Extracts named entities of types PERSON, NORP, FAC, and ORG.
+   - Extracts adjectives from the reviews.
 
    **Usage:**
-   Run the Processing Movie Reviews.py script to generate insights and visualizations:  
-    python Processing Movie Reviews.py  
-  
+   Run the Processing Movie Reviews.py script to generate insights and visualizations:
+   -   python Processing Movie Reviews.py    
+   
    **Generated Graphs:**
    -  Number of Sentences w.r.t Sentiment
    -  Top 20 Entities in Selected Types
    -  Top 20 Adjectives w.r.t Sentiment
 
-2. **Topic Modeling on Movie Reviews:**
+3. **Topic Modeling on Movie Reviews:**
+   
    This script performs topic modeling using the Latent Dirichlet Allocation (LDA) model. It uses spaCy for tokenization and scikit-learn's CountVectorizer and LatentDirichletAllocation.
 
    **Usage:**
    Run the Topic Modeling on Movie Reviews.py script to identify and visualize topics:
-    python Topic Modeling on Movie Reviews.py
+   -   python Topic Modeling on Movie Reviews.py
 
-   **Sample Output:**  
+   **Sample Output:**
+   
    Topic 1:  
    love wife father woman life mother young son man husband  
    ...  
+   ...    
    Topic 19:  
    war people american world documentary history japanese political america anti  
 
-3. **Training Word Embedding on Movie Reviews**
+5. **Training Word Embedding on Movie Reviews**
+   
    This script applies pre-trained word embedding models and trains custom word embedding models using Gensim's Word2Vec.
 
    **Usage:**
    Run the Training Word Embedding on Movie Reviews.py script to train and evaluate word embeddings:
-    python Training Word Embedding on Movie Reviews.py
+   -   python Training Word Embedding on Movie Reviews.py
 
-   **Sample Output:**  
+   **Sample Output:**
+     
    similarity between funny and comedy is 0.46052005887031555  
    similarity between funny and music is 0.22704412043094635  
    similarity between funny and laugh is 0.4182666540145874  
