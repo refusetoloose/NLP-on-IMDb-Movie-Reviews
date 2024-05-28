@@ -24,7 +24,7 @@ This repository contains code and data for performing Natural Language Processin
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/refusetoloose/NLP-on-IMDb-Movie-Reviews.git
-   NLP-on-IMDb-Movie-Reviews
+   cd NLP-on-IMDb-Movie-Reviews
 
 2. **Create and activate a virtual environment:**
    ```bash
